@@ -5,7 +5,7 @@ class Particle {
     let yRange = 1
     this.x = x;
     this.y = y;
-    this.radius = radius;
+    this.radius = 6;
     this.color = color;
     this.velocity = {
       x: Math.random() * xRange - xRange / 2,
