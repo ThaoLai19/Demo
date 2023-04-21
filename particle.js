@@ -5,7 +5,7 @@ class Particle {
     let yRange = 1
     this.x = x;
     this.y = y;
-    this.radius = 6;
+    this.radius = radius;
     this.color = color;
     this.velocity = {
       x: Math.random() * xRange - xRange / 2,
@@ -15,7 +15,7 @@ class Particle {
 
   draw() {
     cvs.beginPath();
-    cvs.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    cvs.arc(this.x, this.y, 6, 0, Math.PI * 2);
     cvs.fillStyle = this.color;
     cvs.fill();
   }
