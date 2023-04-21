@@ -15,7 +15,7 @@ class Particle {
 
   draw() {
     cvs.beginPath();
-    cvs.arc(this.x, this.y, 2, 0, Math.PI * 2);
+    cvs.arc(this.x, this.y, 1, 0, Math.PI * 2);
     cvs.fillStyle = this.color;
     cvs.fill();
   }
