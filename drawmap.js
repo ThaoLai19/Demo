@@ -5,7 +5,7 @@ function drawMap() {
             if (array2d[x][y] >= THRESHOLD) {
                 // Draw the rectangle
                 cvs.fillStyle = 'rgba(255, 255, 0)';
-                cvs.fillRect(y, x, 6, 6);
+                cvs.fillRect(y, x, 1, 1);
             }
         }
     }
