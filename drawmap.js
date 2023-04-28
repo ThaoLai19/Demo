@@ -1,9 +1,9 @@
 function drawMap() {
     // Double forloop to draw
-    //for (let x = 0; x < array2d[0].length; x++) {
-       // for (let y = 0; y < array2d.length; y++) {
-    for (let x = array2d[0].length - 1; x >= 0; x--) {
-        for (let y = array2d.length - 1; y >= 0; y--) {
+    for (let x = 0; x < array2d.length; x++) {
+        for (let y = 0; y < array2d[0].length; y++) {
+    //for (let x = array2d[0].length - 1; x >= 0; x--) {
+       // for (let y = array2d.length - 1; y >= 0; y--) {
             if (array2d[x][y] >= THRESHOLD) {
                 // Draw the rectangle
                 cvs.fillStyle = 'rgba(255, 255, 255)';
