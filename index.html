@@ -2,7 +2,7 @@
 <canvas id="myCanvas"></canvas>
 <style>
   body {
-    background-color: silver;
+    background-color: yellow;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -25,9 +25,9 @@
       canvas.height = window.innerHeight;
 
       fetch('distance_field.json')
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data);
+        .then(response => response.json())
+        .then(data => {
+          console.log("data: ", data);
           array2d = data;
         });
 
