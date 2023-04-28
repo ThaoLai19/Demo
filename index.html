@@ -2,7 +2,7 @@
 <canvas id="myCanvas"></canvas>
 <style>
   body {
-    background-color: yellow;
+    background-color: silver;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -26,10 +26,9 @@
 
       fetch('distance_field.json')
         .then((response) => response.json())
-        .then(data => {
-        console.log(data);
+        .then((data) => console.log(data);
           array2d = data;
-        });
+       // });
 //console.log("data:", data);
       // Call the animate function to start the animation loop
       animate();
