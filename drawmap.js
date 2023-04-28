@@ -1,6 +1,6 @@
 function drawMap() {
     // Double forloop to draw
-    /*for (let x = array2d.length[0] - 1; x >=0 ; x--) {
+    for (let x = array2d.length[0] - 1; x >=0 ; x--) {
         for (let y = 0; y < array2d.length; y++) {
             if (array2d[x][y] >= THRESHOLD) {
                 // Draw the rectangle
@@ -10,8 +10,5 @@ function drawMap() {
                 // Phai rotate cai distance field de no ko anh huong toi clicking particle
             }
         }
-    }*/
-    const response = await fetch("distance_field.json");
-    const json = await response.json();
-    console.log(json);
+    }
 }
