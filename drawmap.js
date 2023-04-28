@@ -1,6 +1,6 @@
 function drawMap() {
     // Double forloop to draw
-    for (let x = 0; x < array2d.length; x++) {
+    for (let x = array2d.length - 1; x >=0 ; x--) {
         for (let y = 0; y < array2d[x].length; y++) {
             if (array2d[x][y] >= THRESHOLD) {
                 // Draw the rectangle
