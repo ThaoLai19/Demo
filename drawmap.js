@@ -15,16 +15,6 @@
 
 function drawMap() {
     // Double forloop to draw
-    //var n = 10;
-    var n = array2d.length;
-    var m = array2d[0].length;
-    for (let i = 0; i < m; i++) 
-    {
-        for (let j = 0; j < n; j++) 
-        {
-            array[i][j] = array2d[j][i];
-        }
-    }
     for (let x = 0; x < array.length ; x++) {
         for (let y = 0; y < array[0].length; y++) {
             if (array[x][y] >= THRESHOLD) {
