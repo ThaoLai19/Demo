@@ -5,9 +5,9 @@ function drawMap() {
             if (array2d[x][y] >= THRESHOLD) {
                 // Draw the rectangle
                 cvs.fillStyle = 'rgba(255, 255, 255)';
-                cvs.fillRect(x, y, 1, 1);
-                //cvs.fillRect(y, x, 1, 1);
-                /// Phai rotate cai distance field de no ko anh huong toi clicking particle
+                //cvs.fillRect(x, y, 1, 1);
+                cvs.fillRect(y, x, 1, 1);
+                // Phai rotate cai distance field de no ko anh huong toi clicking particle
             }
         }
     }
