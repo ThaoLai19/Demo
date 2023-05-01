@@ -2,7 +2,7 @@
 <canvas id="myCanvas"></canvas>
 <style>
   body {
-    background-color: yellow;
+    background-color: black;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -19,17 +19,22 @@
     let cvs = canvas.getContext("2d");
     let array2d = null;
     let particles = []; // Array to store the particles
+    var text = null;
 
     window.onload = function () {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      fetch('distance_field.json')
+     /* fetch('distance_field.json')
         .then(response => response.json())
         .then(data => {
           console.log("data:", data);
           array2d = data;
-        });
+        });*/
+      text = fetch('distance_field.json')
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+      array2d = JSON.parse(text);
 
       // Call the animate function to start the animation loop
       animate();
