@@ -35,11 +35,16 @@
         .then((response) => response.json())
         .then((json) => console.log(json));
       array2d = JSON.parse(text);*/
-      fetch("distance_field.json")
+      /*fetch("distance_field.json")
         .then((response) => response.json())
         .then(data => {
           array2d = data;
-        });
+        });*/
+
+    array2d = JSON.parse('distance_field.json');
+    /*$.getJSON("test.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+    });*/
 
       // Call the animate function to start the animation loop
       animate();
