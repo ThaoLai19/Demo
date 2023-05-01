@@ -18,10 +18,10 @@
     var THRESHOLD = 0.00005;
     let cvs = canvas.getContext("2d");
     let array2d = null;
-    //let array = null;
+    let array = null;
     let particles = []; // Array to store the particles
     //var text = null;
-    //var n, m;
+    var n, m;
 
     window.onload = function () {
       canvas.width = window.innerWidth;
@@ -44,6 +44,15 @@
         .then(data => {
           array2d = data;
         });
+      
+      for (let i = array2d.length - 1; i >= 0 ; i--) {
+        for (let j = 0; j < array2d[0].length; j++) {
+            array[i][j] = array2d[j][i];
+            //cvs.fillRect(x, y, 1, 1);
+            //cvs.fillRect(y, x, 1, 1);
+            // Phai rotate cai distance field de no ko anh huong toi clicking particle
+        }
+    }
 
     /*n = array2d.length;
     m = array2d[0].length;
