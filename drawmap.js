@@ -21,7 +21,7 @@ function drawMap() {
             if (array2d[x][y] >= n) {
                 // Draw the rectangle
                 cvs.fillStyle = 'rgba(255, 255, 255)';
-                cvs.fillRect(x, y, 2, 2);
+                cvs.fillRect(x, y, 3, 3);
                 //cvs.fillRect(y, x, 1, 1);
             }
         }
