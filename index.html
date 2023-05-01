@@ -2,7 +2,7 @@
 <canvas id="myCanvas"></canvas>
 <style>
   body {
-    background-color: yellow;
+    background-color: silver;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -32,16 +32,28 @@
           console.log("data:", data);
           array2d = data;
         });*/
+      
       /*text = fetch('distance_field.json')
         .then((response) => response.json())
         .then((json) => console.log(json));
       array2d = JSON.parse(text);*/
+      
       fetch('distance_field.json')
         .then((response) => response.json())
         .then(data => {
           array2d = data;
         });
 
+    var n = array2d.length;
+    var m = array2d[0].length;
+    for (let i = 0; i < m; i++) 
+    {
+        for (let j = 0; j < n; j++) 
+        {
+            array[i][j] = array2d[j][i];
+        }
+    }
+      
     //array2d = JSON.parse('distance_field.json');
     /*$.getJSON("distance_field.json", function(json) {
     array2d = json;
