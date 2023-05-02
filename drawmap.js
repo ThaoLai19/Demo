@@ -16,7 +16,7 @@
 function drawMap() {
     // Double forloop to draw
     var n = 10;
-    for (let x = 0; x < array2d.length ; x++) {
+    for (let x = 0; x < array2d.length; x++) {
         for (let y = 0; y < array2d[0].length; y++) {
             if (array2d[x][y] >= n) {  
                 cvs.fillStyle = 'rgba(255, 255, 255)';
