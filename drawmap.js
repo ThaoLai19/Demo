@@ -17,12 +17,12 @@ function drawMap() {
     // Double forloop to draw
     const rows = array1[0].length;
       const cols = array1.length;
-      array2d = new Array(array1[0].length);
+      array2d = new Array(rows);
     
-      for (let i = 0; i < array1[0].length; i++)
+      for (let i = 0; i < rows; i++)
       {
-        array2d[i] = new Array(array1.length);
-        for (let j = 0; j < array1.length; j++)
+        array2d[i] = new Array(cols);
+        for (let j = 0; j < cols; j++)
         {
           array2d[i][j] = array1[j][i];  
         }
