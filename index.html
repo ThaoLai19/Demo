@@ -18,10 +18,9 @@
     var THRESHOLD = 0.00005;
     let cvs = canvas.getContext("2d");
     let array2d = null;
-    //let array = null;
+    let array = null;
     let particles = []; // Array to store the particles
     //var text = null;
-    //var n, m;
 
     window.onload = function () {
       canvas.width = window.innerWidth;
@@ -44,7 +43,18 @@
         .then(data => {
           array2d = data;
         });
-      
+      const rows = array2d[0].length;
+      const cols = array2d.length;
+      array = new Array(rows);
+      for (let i = 0; i < rows; i++)
+      {
+        array[i] = new Array(cols);
+        for (let j = 0; j < cols; j++)
+        {
+          array[i][j] = array2d[j][i];  
+        }
+      }
+
      /* for (let i = array2d.length - 1; i >= 0 ; i--) {
         for (let j = 0; j < array2d[0].length; j++) {
             array[i][j] = array2d[j][i];
