@@ -15,6 +15,21 @@
 
 function drawMap() {  
     // Double forloop to draw
+    const rows = array1[0].length;
+      const cols = array1.length;
+      array2d = new Array(array1[0].length);
+    
+      for (let i = 0; i < array1[0].length; i++)
+      {
+        array2d[i] = new Array(array1.length);
+        for (let j = 0; j < array1.length; j++)
+        {
+          array2d[i][j] = array1[j][i];  
+        }
+      }
+    
+    console.log(array1);
+    console.log(array2d);
     
     for (let x = 0; x < array2d.length; x++) {
         for (let y = 0; y < array2d[0].length; y++) {
