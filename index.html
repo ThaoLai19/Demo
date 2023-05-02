@@ -14,6 +14,7 @@
   <script src="mouse.js" type="text/javascript"></script>
   <script src="animate.js" type="text/javascript"></script>
   <script src="drawmap.js" type="text/javascript"></script>
+  <script src="array.js" type="text/javascript"></script>
   <script>
     var THRESHOLD = 0.00005;
     let cvs = canvas.getContext("2d");
@@ -37,7 +38,7 @@
         .then(data => {
           array1 = data;
         });
-    
+    getArray();
       
 
     //array2d = JSON.parse('distance_field.json');
