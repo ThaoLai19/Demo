@@ -27,9 +27,7 @@ function drawMap() {
           array2d[i][j] = array1[j][i];  
         }
       }
-    
-    //console.log(array1);
-    //console.log(array2d);
+
     
     for (let x = 0; x < array2d.length; x++) {
         for (let y = 0; y < array2d[0].length; y++) {
@@ -39,6 +37,9 @@ function drawMap() {
             }
         }
     }
+    
+    console.log(array1);
+    console.log(array2d);
 }
 
 /*function drawMap() {
