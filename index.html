@@ -38,19 +38,21 @@
           array1 = data;
         });
       
-      const rows = array1[0].length;
-      const cols = array1.length;
-      array2d = new Array(rows);
+      console.log(array1);
+      
+      //const rows = array1[0].length;
+      //const cols = array1.length;
+      array2d = new Array(array1[0].length);
     
-      for (let i = 0; i < rows; i++)
+      for (let i = 0; i < array1[0].length; i++)
       {
-        array2d[i] = new Array(cols);
-        for (let j = 0; j < cols; j++)
+        array2d[i] = new Array(array1.length);
+        for (let j = 0; j < array1.length; j++)
         {
           array2d[i][j] = array1[j][i];  
         }
       }
-      console.log(array1);
+      
       console.log(array2d);
 
     //array2d = JSON.parse('distance_field.json');
