@@ -2,7 +2,7 @@
 <canvas id="myCanvas"></canvas>
 <style>
   body {
-    background-color: silver;
+    background-color: navy;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
@@ -17,8 +17,8 @@
   <script>
     var THRESHOLD = 0.00005;
     let cvs = canvas.getContext("2d");
-    let array2d = null;
     let array = null;
+    let array2d = null;
     let particles = []; // Array to store the particles
 
     window.onload = function () {
@@ -30,12 +30,7 @@
         .then(data => {
           console.log("data:", data);
           array2d = data;
-        });*/
-      
-      /*text = fetch('distance_field.json')
-        .then((response) => response.json())
-        .then((json) => console.log(json));
-      array2d = JSON.parse(text);*/
+        });*/ 
       
       fetch('distance_field.json')
         .then((response) => response.json())
