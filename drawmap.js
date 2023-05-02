@@ -28,8 +28,8 @@ function drawMap() {
         }
       }
     
-    console.log(array1);
-    console.log(array2d);
+    //console.log(array1);
+    //console.log(array2d);
     
     for (let x = 0; x < array2d.length; x++) {
         for (let y = 0; y < array2d[0].length; y++) {
