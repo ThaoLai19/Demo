@@ -44,6 +44,19 @@
           array2d = data;
         });
       
+      const rows = array2d[0].length;
+      const cols = array2d.length;
+      array = new Array(rows);
+    
+      for (let i = 0; i < rows; i++)
+      {
+        array[i] = new Array(cols);
+        for (let j = 0; j < cols; j++)
+        {
+          array[i][j] = array2d[j][i];  
+        }
+      }
+      
     //array2d = JSON.parse('distance_field.json');
     /*$.getJSON("distance_field.json", function(json) {
     array2d = json;
