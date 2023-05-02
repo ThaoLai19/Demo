@@ -38,8 +38,8 @@ function drawMap() {
         }
     }
     
-    console.log(array1);
-    console.log(array2d);
+    //console.log(array1);
+   //console.log(array2d);
 }
 
 /*function drawMap() {
