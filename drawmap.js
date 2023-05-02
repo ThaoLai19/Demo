@@ -13,19 +13,7 @@
     }
 }*/
 
-function drawMap() {
-    const rows = array2d[0].length;
-    const cols = array2d.length;
-    array = new Array(rows);
-    
-    for (let i = 0; i < rows; i++)
-    {
-      array[i] = new Array(cols);
-      for (let j = 0; j < cols; j++)
-      {
-        array[i][j] = array2d[j][i];  
-      }
-    }
+function drawMap() {  
     // Double forloop to draw
     var n = 10;
     for (let x = 0; x < array.length; x++) {
