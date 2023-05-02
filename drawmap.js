@@ -17,6 +17,7 @@ function drawMap() {
     const rows = array2d[0].length;
     const cols = array2d.length;
     array = new Array(rows);
+    
     for (let i = 0; i < rows; i++)
     {
       array[i] = new Array(cols);
