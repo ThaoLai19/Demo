@@ -27,10 +27,10 @@ function drawMap() {
       }
     }
     // Double forloop to draw
-    var n = 10;
+    //var n = 10;
     for (let x = 0; x < array.length; x++) {
         for (let y = 0; y < array[0].length; y++) {
-            if (array[x][y] >= n) {  
+            if (array[x][y] >= THRESHOLD) {  
                 cvs.fillStyle = 'rgba(255, 255, 255)';
                 cvs.fillRect(x, y, 1, 1);
             }
